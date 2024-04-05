@@ -46,7 +46,7 @@ resource "aws_security_group_rule" "g_rule" {
   from_port         = 80
   to_port           = 80
   protocol          = "tcp"
-  cidr_blocks       = ["192.168.0.0/16"]
+  cidr_blocks       = ["0.0.0.0/0"]
   # ipv6_cidr_blocks  = [aws_vpc.example.ipv6_cidr_block]
   security_group_id = aws_security_group.sec_g.id
 }
